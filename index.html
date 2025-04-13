@@ -3,63 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SideBar</title>
+    <title>Document</title>
 
-    <!-- ✅ Correct Font Awesome CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
-<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
-    <button class="sidebar-toggle">
-        <!-- ✅ Correct icon class -->
-        <i class="fas fa-bars"></i>
-    </button>
-
-    <aside class="sidebar">
-       <div class="sidebar-header">
-            <img src="logo.jpg" class="logo" alt="logo">
-            <button class="class-btn">
-                <i class="fas fa-times"></i>
-            </button>
-       </div>
-       <ul class="links">
-        <li>
-            <a href="">Home</a>
-        </li>
-        <li>
-            <a href="">About</a>
-        </li>
-        <li>
-            <a href="">Projects</a>
-        </li>
-        <li>
-            <a href="">Contacts</a>
-        </li>
-       </ul>
-       <ul class="social-icons">
-        <li>
-            <a href="">
-                <i class="fab fa-facebook"></i>
-            </a>
-        </li>
-        <li>
-            <a href="">
-                <i class="fab fa-twitter"></i>
-            </a>
-        </li>
-        <li>
-            <a href="">
-                <i class="fab fa-telegram"></i>
-            </a>
-        </li>
-        <li>
-            <a href="">
-                <i class="fab fa-linkedin"></i>
-            </a>
-        </li>
-       </ul>
-    </aside>
-    <script src="app.js"></script>
+    <section class="container">
+        <div class="title">
+            <h2>Our Review</h2>
+            <div class="underline"></div>
+        </div>
+        <article class="review">
+            <div class="img-container">
+                <img width="100" height="100" src="img/pallaviphoto.jpg" id="pallavi-img">
+            </div>
+            <h4 id="author">Pallavi Ghule</h4>
+            <p id="job">Developer</p>
+            <p id="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error porro quod sapiente eos a at culpa nemo iste? Quos accusantium delectus ab sequi voluptate velit eum reiciendis perspiciatis molestiae mollitia.</p>
+        
+        <div class="button-container">
+        <button class="prev-btn">Prev</button>
+        <button class="next.btn">Next</button>
+        </div>
+        </article>
+    </section>
+    <script src="js/app.js"></script>
+    
 </body>
 </html>
-
