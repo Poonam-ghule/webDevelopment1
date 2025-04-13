@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ <style>
+    @keyframes bounce {
+        0% {translate: translateX(0);}
+        50%{transform: translateX(-20px);}
+        100% {transform: translateX(0);}  
+    }
+    .box{
+        width: 100px;
+        height: 100px;
+        background: red;
+        text-align: center;
+        color: white;
+        line-height: 100px;
+        animation: bounce 1s infinite;
+    }
+ </style>
+
+
+</head>
+<body>
+     <div class="box">Bounce</div>
+</body>
+</html>

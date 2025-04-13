@@ -1,11 +1,15 @@
-const toggleBtn = document.querySelector(".sidebar-toggle");
-const closeBtn = document.querySelector(".close-btn");
-const sidebar = document.querySelector(".sidebar");
+const colors=["red","green","rgb(1,45,20)","#f1c5D"];
+const btn = document.getElementById("btn");
+const color = document.querySelector(".color");
 
+btn.addEventListener("click",function(){
+  
+    const randomNumber = getRandomNumber();
+    document.body.style.backgroundColor = color[randomNumber];
+    color.textContent = color[randomNumber];
 
-toggleBtn.addEventListener("click",function(){
-  sidebar.classList.toggle("show-sidebar"); 
 });
-closeBtn.addEventListener("click",function (){
-    sidebar.classList.remove("show-sidebar");
-})
+
+function getRandomNumber(){
+    return Math.floor(Math.random()*colors.length);
+}

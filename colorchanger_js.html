@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<h1 id = "title">Color changer</h1>
+<button id="redbutton">Red</button>
+<button id="bluebutton">Blue</button>
+<button id="greenbutton">Green</button>
+
+
+<script>
+         let redbutton = document.getElementById('redbutton');
+         let bluebutton = document.getElementById('bluebutton');
+         let greenbutton = document.getElementById('greenbutton');
+        
+
+         redbutton.addEventListener("click", function(){
+            document.body.style.backgroundColor = 'red';
+         })
+        bluebutton.addEventListener("click", function(){
+        document.body.style.backgroundColor = 'blue';
+        })
+        greenbutton.addEventListener("click", function(){
+         document.body.style.backgroundColor = 'green';
+         })
+
+
+
+    
+</script>
+
+
+
+
+    
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="title">Hello world!</h1>
+    <p>this is the just paragraph</p>
+     <button id="changeText">logIn</button>
+        
+   <script>
+        let titleElement = document.getElementById('title')
+         titleElement.textContent = 'hello poonam'
+
+      let para = document.querySelector('.decription')
+     para.innerHTML = '<strong>this is bolder now!</strong>'
+      
+
+     let button = document.getElementById('changeText')
+     button.style.backgroundColor='blue';
+     button.style.color = 'white';
+     
+   </script> 
+</body>
+</html>

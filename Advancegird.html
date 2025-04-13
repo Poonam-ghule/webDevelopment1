@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://font.googleapis.com/css2?family=Robot&display=swap" rel="stylesheet">
+
+<style>
+.layout{
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "sidebar sidebar"
+    "footer footer";
+    grid-template-columns: 1fr 3fr;
+
+}
+.header{
+    grid-area: header;
+    background: blue;
+    color: white;
+    padding: 20px;
+
+}
+.sidebar
+{
+    grid-area: sidebar;
+    background: gray;
+    color: white;
+    padding: 20px;
+
+}
+.content {
+    grid-area: content;
+    background: lightgrey;
+    padding: 20px;
+}
+.footer {
+    grid-area: footer;
+    background: darkblue;
+    color: white;
+    padding: 20px;
+}
+
+
+
+</style>
+
+</head>
+<body>
+   <div class="container">
+    <div class="header">Header</div>
+    <div class="sidebar">Sidebar</div>
+    <div class="content">Main Content</div>
+    <div class="footer">Footer</div>
+   
+</body>
+</html>
